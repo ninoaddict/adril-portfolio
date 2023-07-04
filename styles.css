@@ -66,7 +66,7 @@ a{
     flex-direction: column;
 }
 
-#welcome-section h2{
+#welcome-section h1{
     font-family: Quicksand;
     text-transform: uppercase;
     font-size: 4rem;
@@ -163,7 +163,7 @@ a{
     }
 }
 
-.container{
+.project-tile{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -223,7 +223,7 @@ a{
     font-size: 1.7rem;
     display: inline-block;
     text-shadow: 2px 2px 1px #1f1f1f;
-    font-family: Tahoma;
+    font-family: Quicksand;
     padding: 1rem 2rem;
 }
 
@@ -243,6 +243,9 @@ footer p{
 @media (max-width : 700px){
     #navbar{
         justify-content: center;
+    }
+    #navbar ul{
+        margin-right: 0;
     }
     #welcome-section{
         background: linear-gradient(60deg, rgba(31,40,51,0.7), rgba(26,28,31,0.9)), url(https://wallpaperaccess.com/full/1922859.jpg);
@@ -266,5 +269,21 @@ footer p{
     }
     .contact-details{
         font-size: 1.4rem;
+    }
+    .nav-list a{
+        display: block;
+        font-size: 1.2rem;
+        padding: 1.2rem;
+        color: #C5C7C7;
+    }
+}
+
+@media (max-width : 500px){
+    .contact-app{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        flex-wrap: wrap;
     }
 }
